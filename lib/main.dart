@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:roll_dice/frontend/widgets/gradient_background.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const RollDice());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class RollDice extends StatelessWidget {
+  const RollDice({super.key});
 
   // This widget is the root of your application.
   @override
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Roll Dice'),
+          child: GradientBackground(),
         ),
       ),
     );
